@@ -17,37 +17,53 @@
         <a href="#section-ourprofile">Our Porfile</a>
         <a href="#section-portofolio">Portofolio</a>
         <a href="#section-messageus">Message Us</a>
-        <span></span>
      </nav>
     </header>
     
     <main>
      <!--Home-->
      <section id="section-home">
-        <header>
-            <h1>Hello User, Welcome to RevoU Wesbite</h1>
+        <header id="header-home">
+            <h1>Hello <span id="home-user">User</span>, Welcome to RevoU Wesbite</h1>
+            <p id="arrow"> >>></p>
+            <button id="CYN">Change Your Name</button>
         </header>
 
         <article>
-            <p>This website is the first exercise</p>
+            <p>We hope you enjoy our Website >_< </p>
             <!--Photo Banner-->
             <div class="photo-banner"></div>
 
         </article>
      </section>
 
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     <hr>
 
      <!--Our Profile-->
-     <section id="Section-ourprofile">
+     <section id="section-ourprofile">
         <header>
             <h1>Our Profile</h1>
         </header>
 
+    <div class="profile-div">
         <div>
-
+            <div class="profile-banner"></div>
+            <h3>1</h3>   
         </div>
+        <div>
+            <div class="profile-banner"></div>
+            <h3>2</h3>   
+        </div>
+        <div>
+            <div class="profile-banner"></div>
+            <h3>3</h3>   
+        </div>
+    </div>
      </section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
      <hr>
 
@@ -65,44 +81,44 @@
         <header>
             <h1>Message Us</h1>
         </header>
-        <section>
-            <!--Form-->
-            <form>
-               <table>
+        <div>
+        <form id="message-form">
+            <table>
                 <tr>
-                    <td>Nama </td>
-                    <td>: <input type="text" name="txtnm" id="txtnm" placeholder="Nama"></td>
+                    <td>Name</td>
+                    <td id="nama">: <input required type="text" name="form-nama" id="form-nama" placeholder="Name"></td>
                 </tr>
                 <tr>
                     <td>Tanggal Lahir</td>
-                    <td>: <input type="date" name="tanggallahir" id="tanggallahir" placeholder=""></td>
+                    <td>: <input required type="date" name="form-tgllahir" id="form-tgllahir"></td>
                 </tr>
-                <tr>
-                    <td>Jenis Kelamin</td> 
-                    <td>: 
-                    <input type="radio" name="jk" id="jk" value="male"> Laki-Laki
-                    <input type="radio" name="jk" id="jk" value="female"> Perempuan
+                    <td>Jenis Kelamin</td>
+                    <td>: <input required type="radio" name="jk" id="jk" value="male">Laki-Laki
+                          <input required type="radio" name="jk" id="jk" value="female">Perempuan
                     </td>
                 </tr>
                 <tr>
-                    <td id="pesan1">Pesan</td>
-                    <td>: <textarea name="pesan" id="pesan"></textarea></td>
-                </tr>
+                    <td id="pesan-p">Pesan</td>
+                    <td>: <input required type="text" name="pesan" id="pesan" placeholder="pesan"></td>
+                </tr> 
                 <tr>
-                    <td colspan="2"><input type="submit" name="submit" id="submit" value="Submit"></td>
+                    <td colspan="2"><input type="Submit" name="submit" id="submit" value="Submit"></td>
                 </tr>
-               </table>
-            </form>
-             <!--Result Form-->
-             <div></div>
-        </section>
-     </section>
-   
+            </table>
+            <!--Hasil Form-->
+            <div>
+                <textarea name="hasil-form" id="hasil-form"></textarea></td>
+            </div>
+        </div>
 
+        </form>
+    </section>
 
-
+    <footer>
+        <p id="footer">Created By Andy@2024</p>
+    </footer>
     
-    </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
