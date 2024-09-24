@@ -37,8 +37,6 @@
         </article>
      </section>
 
- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
     <hr>
 
      <!--Our Profile-->
@@ -61,9 +59,9 @@
             <h3>3</h3>   
         </div>
     </div>
-     </section>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2 id="kosong1">Maaf untuk Halaman ini masih kosong</h2>
+     </section>
 
      <hr>
 
@@ -72,17 +70,19 @@
         <header>
             <h1>Portofolio</h1>
         </header>
+
+        <h2 id="kosong2">Maaf untuk Halaman ini masih kosong</h2>
      </section>
 
      <hr>
 
      <!--Message Us-->
-     <section id="section-messageus">
+     <section id="section-messageus" >
         <header>
-            <h1>Message Us</h1>
+            <h1 style="font-family: 'Times New Roman', Times, serif;">Message Us</h1>
         </header>
         <div>
-        <form id="message-form">
+        <form id="message-form" onsubmit="return validateForm ()">
             <table>
                 <tr>
                     <td>Name</td>
@@ -93,26 +93,33 @@
                     <td>: <input required type="date" name="form-tgllahir" id="form-tgllahir"></td>
                 </tr>
                     <td>Jenis Kelamin</td>
-                    <td>: <input required type="radio" name="jk" id="jk" value="male">Laki-Laki
-                          <input required type="radio" name="jk" id="jk" value="female">Perempuan
+                    <td>: <input required type="radio" name="jk" id="jk" value="Laki-Laki">Laki-Laki
+                          <input required type="radio" name="jk" id="jk" value="Perempuan">Perempuan
                     </td>
                 </tr>
                 <tr>
                     <td id="pesan-p">Pesan</td>
-                    <td>: <input required type="text" name="pesan" id="pesan" placeholder="pesan"></td>
+                    <td>: <textarea required type="" name="pesan" id="pesan" placeholder="pesan"></textarea></td>
+
                 </tr> 
                 <tr>
                     <td colspan="2"><input type="Submit" name="submit" id="submit" value="Submit"></td>
                 </tr>
             </table>
+
             <!--Hasil Form-->
-            <div>
-                <textarea name="hasil-form" id="hasil-form"></textarea></td>
+            <div name="hasil-form" id="hasil-form">
+                <p><b>Nama :</b><span id="div-nama"></span></p>
+                <p><b>Tanggal Lahir :</b><span id="div-tgllahir"></span></p>
+                <p><b>Jenis Kelamin :</b><span id="div-jk"></span></p>
+                <p><b>Pesan :</b><span id="div-pesan"></span></p>
             </div>
         </div>
 
         </form>
     </section>
+
+    <br><br>
 
     <footer>
         <p id="footer">Created By Andy@2024</p>
