@@ -1,8 +1,5 @@
 /* ini CSS */
-
-html {
-    view
-}
+/* section home */
 .body-header {
     display: flex;
     justify-content: space-between;
@@ -85,35 +82,45 @@ main #arrow {
     font-size: 30px;
 }
 
-.profile-banner {
+/* section our-profile */
+.profile-banner1 {
     border: 1px solid;
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
+    background-image: url(../jakarta.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+.profile-banner2 {
+    border: 1px solid;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    background-image: url(../bandung.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+.profile-banner3 {
+    border: 1px solid;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    background-image: url(../surabaya.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .profile-div {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    flex-direction: row;
 }
 
-section #kosong1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 100px;
-    height: 200px;
-}
-
-section #kosong2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 100px;
-    height: 500px;
-}
-
+/* section messageus */
 #section-messageus {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -166,7 +173,7 @@ div #message-form {
     display: flex;
 }
 
-div #hasil-form {
+#hasil-form {
     width: 500px;
     border: 2px solid;
     height: 250px;
@@ -174,6 +181,7 @@ div #hasil-form {
     margin-left: 125px;
 }
 
+/* footer */
 footer #footer {
     border-top: solid;
     border-bottom: solid;
@@ -182,16 +190,30 @@ footer #footer {
     padding: 20px 5px 0px 0px;
 }
 
+/* section untuk mengubah reponsive*/
 @media only screen and (max-width: 600px) {
     .body-header {
         flex-direction: column;
+        flex: 3;
     }
+
     .menu {
         flex-direction: column;
         width: 100%;
+        text-align: center
     }
 
     .logo-icon {
-        margin-bottom: ;
+        margin-bottom: 15px;
+    }
+
+    .profile-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-banner {
+        width: 610px;
+        height: 335px;
     }
 }
